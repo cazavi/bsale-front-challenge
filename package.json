@@ -1,0 +1,17 @@
+{
+  "name": "bsale-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve -s index.html"
+  },
+  "author": "cazavi",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "axios": "^0.27.2",
+    "serve": "^14.0.1"
+  }
+}
