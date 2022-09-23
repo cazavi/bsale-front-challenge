@@ -9,19 +9,22 @@
 </head>
 <body>
   <div id="root">
+    <div class="logoDiv">
+      <img class="logo" src="./src/assets/logo.png">
+    </div>
       <div class="imgDiv">
         <img src="./src/assets/magnifying-glass.png"></img>
       </div>
       <div class="inputDiv">
-      <input type="text" id="searchInput" placeholder="Buscar productos">
-      <select class="houseSelect" id="houseS">
-        <option value=" ">Categorías</option>
-        <option value="gryffindor">Gryffindor</option>
-        <option value="slytherin">Slytherin</option>
-        <option value="ravenclaw">Ravenclaw</option>
-        <option value="hufflepuff">Hufflepuff</option>
-      </select>
-        </div>
+        <input type="text" id="searchInput" placeholder="¿Qué buscas hoy?">
+        <select id='filter' class="catSelect">
+          <!-- <svg class='svgFilter'fill='black' height='55' viewBox='0 0 24 24' width='55'xmlns='http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg> -->
+          <option value="gryffindor"></option>
+          <option value="slytherin">Slytherin</option>
+          <option value="ravenclaw">Ravenclaw</option>
+          <option value="hufflepuff">Hufflepuff</option>
+        </select>
+      </div>
 
       <div id="result">
         

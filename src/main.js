@@ -11,6 +11,8 @@ const search = document.querySelector('#searchInput');
 // const btnSearch = document.querySelector('#searchButton');
 const result = document.querySelector('#result');
 
+const filter= document.getElementById('#filter')
+
 const filterSearch = () => {
   result.innerHTML = '';
   const text = search.value.toLowerCase();
@@ -47,3 +49,4 @@ filterSearch();
 
       // <li>${product.name}-Precio:${product.price}</li>
       // <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image">
+
