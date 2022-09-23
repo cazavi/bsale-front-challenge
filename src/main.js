@@ -27,8 +27,11 @@ const filterSearch = () => {
             <a >
                 <h5 class="productName">${product.name}</h5>
             </a>
-            <div >
+            <div class="prices">
                 <span class="productPrice ">$${product.price}</span>
+                <span class="productPrice ">$${product.price-product.discount}</span>
+                <span class="productPrice ">$${product.discount}</span>
+
                 <a class="add">Agregar</a>
             </div>
         </div>
