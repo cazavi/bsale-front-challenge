@@ -1,4 +1,17 @@
 
+
+axios
+  .get('http://localhost:8000')
+  .then((response)=> {
+    console.log(response.data)
+    console.log('llegó el produsto')
+  })
+  .catch((error)=> {
+    console.log(error)
+  })
+
+
+
 const products = [
   {name:'Plátanos', price:500},
   {name:'Frutilla', price:600},

@@ -1,14 +1,12 @@
-import axios from "axios";
+import axios from 'axios';
 
-// let headers = {
-//   Authorization: `Bearer ${localStorage.getItem('token')}`
-// }
+axios
+  .get('http://localhost:8000/product')
+  .then((response)=> {
+    console.log(response)
+    console.log('llegó el produsto')
+  })
+  .catch((error)=> {
+    console.log(error)
+  })
 
-// axios
-//   .get('https://apiburgerqueenv1.herokuapp.com/', { headers })
-//   .then((response)=> {
-//     console.log(response.data)
-//   })
-//   .catch((error)=> {
-//     console.log(error)
-//   })
