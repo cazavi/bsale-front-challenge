@@ -228,11 +228,13 @@ body {
   .cardDiv{
     padding-top:5px;
     padding-bottom:5px;
+    margin-top:5px;
+    margin-bottom:5px;
     width: 8rem;
     height:10rem:
   }
   .productName{
-    font-size:12px;
+    font-size:10px;
   }
   .prices{
     font-size:9px;
@@ -245,7 +247,7 @@ body {
   }
   .button{
     width: 20px;
-    font-size:12px;
+    font-size:10px;
   }
   .logo{
     height:40px;
