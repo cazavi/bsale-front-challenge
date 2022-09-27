@@ -7,5 +7,5 @@
   Poryecto front-end que simula un market place y se une con proyecto back API `https://github.com/cazavi/bsale-back-challenge`
 
 ### Despliegue
-* Navegador recomendado: Google Chrome
+* Navegador recomendado: Google Chrome <br/>
 _Link deploy: `https://bsalefrontchallenge.herokuapp.com`_
