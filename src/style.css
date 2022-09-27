@@ -30,8 +30,7 @@ body {
 
 .logo{
   height:50px;
-  width:100x;  /* padding-bottom:800px;
-  margin-bottom:500px; */
+  width:100x;
 }
 
 .imgDiv{
@@ -41,15 +40,13 @@ body {
   padding: 1rem;
   padding-left: 17.5rem;
   z-index: 100;
-
 }
 
 .inputDiv{
   display:flex;
   position: relative;
-  /* background-image: linear-gradient(295deg, #e8e45e 0, #c8d546 25%, #a1c127 50%, #79ad00 75%, #529e00 100%);; */
   background-image: radial-gradient(circle at 76.4% 50%, #77b03e 0, #5da737 25%, #3b9b2e 50%, #008f27 75%, #008525 100%);
-background-position: 50% 50%;
+  background-position: 50% 50%;
   height: 3rem;
   justify-content:center;
   align-items:center;
@@ -67,7 +64,6 @@ background-position: 50% 50%;
 }
 
 #result{
-  /* max-width:full;   */
   display:grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -84,21 +80,16 @@ background-position: 50% 50%;
   background-color: white;
   font-family: 'Raleway', 500;
   font-size: 12px;
-  /* align-items: center; */
   box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
-  /* margin: 1px; */
   margin: 3px;
   padding: 3px;
   display: flex;
   border-radius: 15px;
-  /* display: flex; */
   align-content: center;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
 }
-
-
 
 .cardDiv:hover {
   transform: scale(1.1);
@@ -193,7 +184,6 @@ background-position: 50% 50%;
 	top:1px;
 }
 
-
 .catSelect{
   display:flex;
   justify-content:center;
@@ -215,7 +205,7 @@ background-position: 50% 50%;
 }
 
 .spanFilter{
-margin-left:20px;
+  margin-left:20px;
 }
 
 .filtro{
@@ -224,4 +214,80 @@ margin-left:20px;
 
 .category{
   display:none;
+}
+
+@media only screen and (min-width: 320px) {
+  #result{
+    padding-left:  1rem;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 30px;
+  }
+  .cardDiv{
+    width: 8rem;
+    height:10rem:
+  }
+  .logo{
+    height:40px;
+    width:80px;
+  }
+  #searchInput{
+    margin-left:6rem;
+    width:4rem;
+    height: 10px;
+    font-size: 10px;
+  }
+  .imgDiv{
+    padding: 1rem;
+    padding-left: 7rem;
+  }
+  .spanFilter{
+    font-size:10px;
+    }
+  .catSelect{
+    width:20px;
+  }
+}
+
+@media only screen and (min-width: 1080px){
+#result{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 30px;
+  padding:5px;
+  }
+  .cardDiv{
+    width: 13rem;
+    height:14rem:
+  }
+  .logo{
+    height:50px;
+    width:130px;
+  }
+  .inputDiv{
+    height:3rem;
+  }
+  #searchInput{
+    padding:0.5rem;
+    padding-left:2.5rem;
+    width:20rem;
+    height: 20px;
+    font-size:20px;
+  }
+  .imgDiv{
+    padding: 1rem;
+    padding-left: 21rem;
+  }
+  .spanFilter{
+    margin-left:20px;
+    font-size:15px;
+    }
+  .catSelect{
+    width: 30px;
+    height: 30px;
+  }
 }
