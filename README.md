@@ -9,5 +9,3 @@
 ### Despliegue
 
 _Link deploy: `https://bsalefrontchallenge.herokuapp.com`_
-
-
