@@ -1,3 +1,5 @@
+let globalData = [];
+
 const getCategories = axios
   .get("https://bsaleapichallenge.herokuapp.com")
   .then((response) => {
@@ -19,12 +21,19 @@ const getProducts = axios
     console.log(error);
   });
 
+
+
 function order(data) {
   data.sort((a, b) => {
     return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
   });
   return data;
 }
+
+// const productsByCategory = (data) =>{
+//   const filteredProduct = data.filter(data.category === 1)
+//   return filteredProduct
+// }
 
 const search = document.querySelector("#searchInput");
 
@@ -37,7 +46,13 @@ const filter = document.getElementById("#filter");
   
 // getCategory();
 // }
-const filterSearch = (data) => {
+const filterSearch = (data, index=0) => {
+  console.log('DATA', data)
+  if (index != 0) {
+    data = data.filter(data =>data.category === 1)
+  }
+  // console.log(filteredProduct)
+
   for (let product of data) {
     const card = document.createElement("div");
     card.classList.add("cardDiv");
@@ -67,6 +82,11 @@ const filterSearch = (data) => {
     price.textContent = `$ ${product.price}`;
     card.appendChild(price);
 
+    const category = document.createElement("p");
+    category.classList.add("category");
+    category.textContent = product.category;
+    card.appendChild(category);
+
     const button = document.createElement("button");
     button.classList.add("button");
     button.textContent = 'Agregar';
@@ -85,11 +105,21 @@ const filterSearch = (data) => {
       });
     }
   });
-  document.addEventListener("change", (e) => {
+  document.addEventListener("change", (e, data) => {
+    console.log('ACA',data)
+    filterSearch(data, e.target.selectedIndex)
+    // console.log('HOLA',e.target.selectedIndex)
+    // productsByCategory(data);
+    // console.log(productsByCategory(globalData))
     if (e.target.matches("#filter")) {
+    console.log('TARGET',e.target);
       document.querySelectorAll(".cardDiv").forEach((product) => {
         const categorySelect = document.getElementById('filter')
+        // console.log('CATEGORYSELECT',categorySelect)
         const type = categorySelect.options[categorySelect.selectedIndex].value;
+        // console.log('TYPE',type)
+        // console.log('PRODUCT CATEGORY', product)
+        // console.log('PRODUCT CATEGORY', product.textContent)
         product.category === type
           ? product.classList.remove("category")
           : product.classList.add("category");
