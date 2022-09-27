@@ -9,7 +9,7 @@ Librería: [Axios](https://axios-http.com/) librería JavaScript para generar la
 ### Despliegue
 
 
-_Link deploy: `https://github.com/cazavi/bsale-front-challenge`_
+_Link deploy: `https://bsalefrontchallenge.herokuapp.com`_
 
 
 
