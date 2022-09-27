@@ -98,6 +98,8 @@ background-position: 50% 50%;
   justify-content: center;
 }
 
+
+
 .cardDiv:hover {
   transform: scale(1.1);
 }
@@ -220,9 +222,6 @@ margin-left:20px;
   display: none;
 }
 
-.hiddenProduct{
-  display:none;
-}
 .category{
   display:none;
 }
