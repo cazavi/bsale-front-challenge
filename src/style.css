@@ -226,13 +226,13 @@ body {
     grid-row-gap: 30px;
   }
   .cardDiv{
-    margin-top:5px;
-    margin-bottom:5px;
+    padding-top:5px;
+    padding-bottom:5px;
     width: 8rem;
     height:10rem:
   }
   .productName{
-    font-size:13px;
+    font-size:12px;
   }
   .prices{
     font-size:9px;
@@ -241,7 +241,11 @@ body {
     font-size:9px;
   }
   .discountPrice{
-    font-size:15px;
+    font-size:12px;
+  }
+  .button{
+    width: 20px;
+    font-size:12px;
   }
   .logo{
     height:40px;
