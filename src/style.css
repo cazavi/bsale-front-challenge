@@ -288,6 +288,22 @@ body {
     height:50px;
     width:130px;
   }
+  .productName{
+    font-size:16px;
+  }
+  .prices{
+    font-size:12px;
+  }
+  .discount{
+    font-size:12px;
+  }
+  .discountPrice{
+    font-size:20px;
+  }
+  .button{
+    width: 45px;
+    font-size:13px;
+  }
   .inputDiv{
     height:3rem;
   }
