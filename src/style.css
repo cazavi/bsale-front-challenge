@@ -231,6 +231,18 @@ body {
     width: 8rem;
     height:10rem:
   }
+  .productName{
+    font-size:13px;
+  }
+  .prices{
+    font-size:9px;
+  }
+  .discount{
+    font-size:9px;
+  }
+  .discountPrice{
+    font-size:15px;
+  }
   .logo{
     height:40px;
     width:80px;
